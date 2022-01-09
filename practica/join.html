@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	<meta charset="utf-8">
+	<title>Fes-te soci | Petinder</title>
+	<meta name="description" content="Col·labora amb Petinder. Omple el formulari i ajudaràs als nostres amics peluts">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/estils.css">
+</head>
+
+<body class="page-join">
+	<header>
+		<nav class="container">
+			<a class="link-logo" href="index.html">
+				<img class="logo" src="images/logo.svg" alt="Logo petinder">
+			</a>
+
+			<ul class="menu-links">
+				<li><a href="about.html">Sobre petinder</a></li>
+				<li><a href="tshirt.html">Samarreta</a></li>
+				<li class="active"><a href="join.html">Fes-te soci</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<div class="container">
+			<h1 class="title">Fes-te soci</h1>
+
+			<p>Col·labora amb Petinder fent-te soci per només 15 euros mensuals. Amb molt poc pots ajudar molt als nostres amics peluts. A més, pots comprar la nostra exclusiva samarreta per només 10 euros que s'afegiran al teu primer pagament. Omple el següent formulari per a unir-te a nosaltres:</p>
+
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Dades personals</legend>
+
+					<div class="form-group">
+						<label for="nom" class="form-label">Nom <span class="required">*</span></label>
+						<input type="text" class="form-control" name="nom" id="nom" placeholder="Nom" required
+							pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
+							title="Només caràcters alfabètics. Un mínim de 2 i un màxim de 64 caràcters">
+					</div>
+
+					<div class="form-group">
+						<label for="cognoms" class="form-label">Cognoms <span class="required">*</span></label>
+						<input type="text" class="form-control" name="cognoms" id="cognoms" placeholder="Cognoms" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,128}" title="Només caràcters alfabètics. Un mínim de 2 i un màxim de 128 caràcters">
+					</div>
+
+					<div class="form-group">
+						<label for="email" class="form-label">Correu electrònic <span class="required">*</span></label>
+						<input type="email" class="form-control" name="email" id="email" placeholder="Correu electrònic" required>
+					</div>
+
+					<div class="form-group">
+						<label for="dni" class="form-label">DNI <span class="required">*</span></label>
+						<input type="text" class="form-control" name="dni" id="dni" placeholder="DNI" required>
+					</div>
+
+					<div class="form-group">
+						<label for="data" class="form-label">Data de naixement <span class="required">*</span></label>
+						<input type="date" class="form-control" name="data" id="data">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Adreça</legend>
+
+					<div class="form-group">
+						<label for="carrer" class="form-label">Carrer i número <span class="required">*</span></label>
+						<input type="text" class="form-control" name="carrer" id="carrer" placeholder="Carrer i número" required>
+					</div>
+
+					<div class="form-group">
+						<label for="ciutat" class="form-label">Ciutat <span class="required">*</span></label>
+						<input type="text" class="form-control" name="ciutat" id="ciutat" placeholder="Ciutat" required>
+					</div>
+					<div class="form-group">
+						<label for="provincia" class="form-label">Província <span class="required">*</span></label>
+						<input type="text" class="form-control" name="provincia" id="provincia" placeholder="Província" required>
+					</div>
+					<div class="form-group">
+						<label for="cpostal" class="form-label">Codi Postal <span class="required">*</span></label>
+						<input type="text" class="form-control" name="cpostal" id="cpostal" placeholder="Codi postal" required>
+					</div>
+					<div class="form-group">
+						<label for="pais" class="form-label">País</label>
+						<select id="pais" class="form-control" name="pais">
+							<option value="-1">Seleccionar</option>
+							<option value="Andorra">Andorra</option>
+							<option value="Espanya">Espanya</option>
+							<option value="Francia">Francia</option>
+							<option value="Altre">Altre</option>
+						</select>
+					</div>
+				</fieldset>
+				<fieldset class="block-payment">
+					<legend>Dades de pagament i samarreta</legend>
+
+					<h2>Mètode de pagament</h2>
+
+					<ul class="radio-group">
+						<li class="radio-option">
+							<input type="radio" name="pagament" id="paga_transfer" value="Transferència" checked>
+							<label for="paga_transfer">Transferència</label>
+						</li>
+
+						<li class="radio-option">
+							<input type="radio" name="pagament" id="paga_credit" value="Targeta de crèdit">
+							<label for="paga_credit">Targeta de crèdit</label>
+						</li>
+
+						<li class="radio-option">
+							<input type="radio" name="pagament" id="paga_paypal" value="Paypal">
+							<label for="paga_paypal">Paypal</label>
+						</li>
+					</ul>
+					<h2>Samarreta</h2>
+					<p>Si vols que t'enviem la samarreta Petinder per 10 € més, selecciona la talla a continuació.</p>
+					<label for="talles" class="form-label">Talla samarreta</label>
+
+					<select id="talles" class="form-control" name="talles">
+						<option value="-1">No vull samarreta</option>
+						<optgroup label="Dones">
+							<option value="Dona S">S</option>
+							<option value="Dona M">M</option>
+							<option value="Dona L">L</option>
+							<option value="Dona XL">XL</option>
+						</optgroup>
+						<optgroup label="Homes">
+							<option value="Home S">S</option>
+							<option value="Home M">M</option>
+							<option value="Home L">L</option>
+							<option value="Home XL">XL</option>
+							<option value="Home XXL">XXL</option>
+							<option value="Home XXXL">XXXL</option>
+						</optgroup>
+					</select>
+				</fieldset>
+
+
+				<div class="form-footer">
+					<small>* Tots els camps marcats són obligatoris</small>
+					<div class="conditions"><input type="checkbox" required id="acepto" value="Accepto"> <label for="acepto">He llegit i accepto la política de privacitat i les condicions d’ús</label></div>
+					<button type="submit" class="boton">Enviar</button>
+				</div>
+
+			</form>
+
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<span>2021 © Petinder - Nom i cognoms de l'estudiant</span>
+
+			<ul class="legal-links">
+				<li><a href="">Termes i condicions d’ús</a></li>
+				<li><a href="">Política de privacitat</a></li>
+				<li><a href="">Cookies</a></li>
+				<li><a href="">FAQ</a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
